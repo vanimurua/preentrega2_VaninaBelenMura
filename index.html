@@ -5,50 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna accesorios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@600&family=Roboto:ital,wght@0,100;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
+
     <header class="cabecera">
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
             <img class="logo" src="./assets/images/Logo.png" alt="Logo">
 
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/telas.html">Telas</a></li>
-                <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-
-        </nav>
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li>
+                    <a class="navbar-brand text-dark menu" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark menu" aria-current="page" href="./pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark menu" aria-current="page" href="./pages/telas.html">Telas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark menu" aria-current="page" href="./pages/ubicacion.html">Ubicación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark menu" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
+
     <main>
-        <section>
-            <h2 class="titulo">Sobre nosotras</h2>
-            <h3>El arte de coser</h3>
+        <div>
+            <h1 class="titulo text-center">Sobre nosotras</h1>
+            <h2>El arte de coser</h2>
             <p class="centrado">Somos madre e hija que decidimos comenzar este emprendimiento. <br>
                 Consiste en confeccionar chau latas, riñoneras y bolsos, entre otras cosas. <br>
                 Aqui encontraras los productos, te invitamos a que los conozcas en la 
                 sección "Productos".
-                </p>
-        </section>
-        <section class="cajaFoto">
-
-            <div>
-                <img src="https://picsum.photos/200/300" alt="foto de Veronica Pradi">
-                <p class="nombre">Veronica Pradi</p>
-
-                <img src="https://picsum.photos/200/300" alt="foto de Vanina Murua">
-                <p class="nombre">Vanina Murua</p>
+            </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 divImgIndex px-4 m-auto">
+            <div class="col">
+              <div class="card imgIndex">
+                <img src="./assets/images/imgVero.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-center">Veronica Pradi</p>
+                </div>
+              </div>
             </div>
-
-        </section>
+            <div class="col">
+              <div class="card imgIndex">
+                <img src="./assets/images/imgVani.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-center">Vanina Murua</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        
     </main>
    
     <footer>
-        <img class="redesSociales" src="./assets/images/instagram.jpg" alt="Logo de instagram" width="30px" height="30px">
-        <img class="redesSociales" src="./assets/images/whatsapp.jpg" alt="Logo de whatsapp" width="30px" height="30px">
-        <p>Copyright © 2022 · Todos los derechos reservados · Vanina Murua</p>
+      <div class="">
+        <a href="https://www.instagram.com/lunaaccesoriosrosario/?hl=es-la" target="_blank"><img class="icons-wrapper icon ri-instagram-line" src="./assets/images/instagram.png" alt="Logo de instagram" width="30px" height="30px"></a>
+        
+      <a href="https://wa.me/54341635965?text= Hola,%20quiero%20saber%20más%20sobre%20tus%20productos." target="_blank"><img class="icons-wrapper icon ri-whatsapp-line" src="./assets/images/whatsapp.png" alt="Logo de whatsapp" width="30px" height="30px"></a>
+      </div>
+      
+  
+      <p>Copyright © 2022 · Todos los derechos reservados · Vanina Murua</p>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

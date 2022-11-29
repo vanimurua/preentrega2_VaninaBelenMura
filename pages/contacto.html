@@ -1,60 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luna accesorios</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luna accesorios</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@600&family=Roboto:ital,wght@0,100;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
 <body>
     <header class="cabecera">
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-light .bg .font">
             <img class="logo" src="../assets/images/Logo.png" alt="Logo">
 
-            <ul>
-                <li><a href="../index.html">Inicio</a></li> 
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="telas.html">Telas</a></li>
-                <li><a href="ubicacion.html">Ubicación</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-
-        </nav>
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li>
+                    <a class="navbar-brand text-dark menu" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark menu" aria-current="page" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark menu" aria-current="page" href="./telas.html">Telas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark menu" aria-current="page" href="./ubicacion.html">Ubicación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark menu" aria-current="page" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section>
-            <h2 class="titulo">Contacto</h2>
+            <h1 class="titulo text-center">Contacto</h1>
         </section>
-        <section>
-            <form class="formulario">
 
-                <div class="divMargin25px"><input type="text" placeholder="Ingrese su nombre*" required></div>
-                <div class="divMargin25px"><input type="email" placeholder="Ingrese su email*" required></div>
-                <div class="divMargin25px">
-                    <select>
-                        <option value="">Medio de pago</option>
-                        <option value="">Debito</option>
-                        <option value="">Credito</option>
-                    </select>
-                </div>
-                <div class="divMargin25px">
-                    <label><input type="checkbox" name="boletin"> Susbribirse al boletín</label>
-                </div>
-                <div class="divMargin25px">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </div>
-                
+        <form class="formulario">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control fondoForm">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control fondoForm">
+          </div>
 
-            </form>
-        </section>
+          <div class="mb-3">
+            <label for="disabledSelect" class="form-label">Seleccione el medio de pago</label>
+            <select id="disabledSelect" class="form-select fondoForm">
+              <option>Debito</option>
+              <option>Credito</option>
+            </select>
+          </div>
+
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input fondoForm">
+            <label class="form-check-label" for="exampleCheck1">Susbribirse al boletín</label>
+
+          </div>
+
+          <div class="mb-3 text-center">
+            <button type="submit" class="btn fondoForm">Enviar</button>
+            <button type="reset" class="btn fondoForm">Borrar</button>
+          </div>
+          
+        </form>
+
     </main>
     <footer>
-        <img class="redesSociales" src="../assets/images/instagram.jpg" alt="Logo de instagram" width="30px" height="30px">
-        <img class="redesSociales" src="../assets/images/whatsapp.jpg" alt="Logo de whatsapp" width="30px" height="30px">
+      <div>
+        <a href="https://www.instagram.com/lunaaccesoriosrosario/?hl=es-la" target="_blank"><img class="icons-wrapper icon ri-instagram-line" src="../assets/images/instagram.png" alt="Logo de instagram" width="30px" height="30px"></a>
+
+        <a href="https://wa.me/54341635965?text= Hola,%20quiero%20saber%20más%20sobre%20tus%20productos." target="_blank"><img class="icons-wrapper icon ri-whatsapp-line" src="../assets/images/whatsapp.png" alt="Logo de whatsapp" width="30px" height="30px"></a>
+      </div>
+
         <p>Copyright © 2022 · Todos los derechos reservados · Vanina Murua</p> 
     </footer>
-
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
