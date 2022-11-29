@@ -1,65 +1,372 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luna accesorios</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-</head>
-<body>
-    <header class="cabecera">
-        <nav>
-            <img class="logo" src="../assets/images/Logo.png" alt="Logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luna accesorios</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@600&family=Roboto:ital,wght@0,100;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header class="cabecera">
+            <nav class="navbar navbar-expand-lg navbar-light .bg .font">
+                <img class="logo" src="../assets/images/Logo.png" alt="Logo">
 
-            <ul>
-                <li><a href="../index.html">Inicio</a></li> 
-                <li><a href="#">Productos</a></li>
-                <li><a href="telas.html">Telas</a></li>
-                <li><a href="ubicacion.html">Ubicación</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li>
+                            <a class="navbar-brand text-dark menu" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark menu" aria-current="page" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark menu" aria-current="page" href="./telas.html">Telas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark menu" aria-current="page" href="./ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark menu" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1 class="titulo text-center">Productos</h1>
+            </section>
 
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2 class="titulo">Productos</h2>
-        </section>
+            <!-- TABLA RIÑONERA-->
 
-        <section>
-            <h4 class="subtitulo">Riñonera</h4>
-            <img src="https://picsum.photos/200/300" alt="">
-            <p class="parrafoProductos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor impedit eos eligendi illum porro numquam incidunt perferendis accusamus dolores, atque aut assumenda quibusdam ab dignissimos debitis voluptas saepe.</p>
-        </section>
-        
-        <section>
-            <h4 class="subtitulo">Chau lata</h4>
-            <img src="https://picsum.photos/200/300" alt="">
-            <p class="parrafoProductos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor impedit eos eligendi illum porro numquam incidunt perferendis accusamus dolores, atque aut assumenda quibusdam ab dignissimos debitis voluptas saepe.</p>
-        </section>
+                <table class="table table-hover m-auto">
+                    <thead>
+                        <tr class="table-primary">
+                            <th colspan="4" class="text-center">Riñonera</th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="table-info">
+                            <th colspan="4" class="text-center">
+                                <img class="imgProductos box" src="../assets/images/riñonera.jpg" alt="">
+                            </th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="table-danger">
+                            <th scope="col">Tela</th>
+                            <th scope="col">Medidas</th>
+                            <th scope="col">Tamaño</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-warning">
+                            <td scope="row">Sasha</td>
+                            <td>36 x 17</td>
+                            <td>Chica</td>
+                            <td>$1600</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Sasha</td>
+                            <td>45 x 18</td>
+                            <td>Grande</td>
+                            <td>$1800</td>
+                        </tr>
+                    </tbody>
+            </table>
+            <br>
 
-        <section>
-            <h4 class="subtitulo">Neceser</h4>
-            <img src="https://picsum.photos/200/300" alt="">
-            <p class="parrafoProductos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor impedit eos eligendi illum porro numquam incidunt perferendis accusamus dolores, atque aut assumenda quibusdam ab dignissimos debitis voluptas saepe.</p>
-        </section>
+            <!-- TABLA CHAU LATA MATELASSE-->
 
-        <section>
-            <h4 class="subtitulo">Bolso</h4>
-            <img src="https://picsum.photos/200/300" alt="">
-            <p class="parrafoProductos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor impedit eos eligendi illum porro numquam incidunt perferendis accusamus dolores, atque aut assumenda quibusdam ab dignissimos debitis voluptas saepe.</p>
-        </section>
+                <table class="table table-hover m-auto">
+                    <thead>
+                        <tr class="table-primary">
+                            <th colspan="4" class="text-center">Chau lata</th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="table-info">
+                            <th colspan="4" class="text-center">
+                                <img class="imgProductos" src="../assets/images/chauLata.png" alt="">
+                            </th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="table-danger">
+                            <th scope="col">Tela</th>
+                            <th scope="col">Juego</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Porta mate</td>
+                            <td>$1000</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Mate XXL</td>
+                            <td>$1200</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Yerbera</td>
+                            <td>$1000</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Azucarera</td>
+                            <td>$800</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Trío</td>
+                            <td>$2500</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Trío XXL</td>
+                            <td>$2700</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Porta mate + yerbera</td>
+                            <td>$1200</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Mate XXL</td>
+                            <td>$1800</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Mate XXL + yerbera</td>
+                            <td>$2000</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>Yerbera + azucarera</td>
+                            <td>$1600</td>
+                    </tbody>
 
-    
+                <!-- TABLA CHAU LATA CORDURA LISA-->
 
+                    <tbody>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Porta mate</td>
+                            <td>$700</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Mate XXL</td>
+                            <td>$900</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Yerbera</td>
+                            <td>$700</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Azucarera</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Trío</td>
+                            <td>$1700</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Trío XXL</td>
+                            <td>$1900</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Porta mate + yerbera</td>
+                            <td>$1200</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Mate XXL</td>
+                            <td>$1800</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Mate XXL + yerbera</td>
+                            <td>$1400</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td scope="row">Cordura lisa</td>
+                            <td>Yerbera + azucarera</td>
+                            <td>$1000</td>
+                    </tbody>
 
-    </main>
-    <footer>
-        <img class="redesSociales" src="../assets/images/instagram.jpg" alt="Logo de instagram" width="30px" height="30px">
-        <img class="redesSociales" src="../assets/images/whatsapp.jpg" alt="Logo de whatsapp" width="30px" height="30px">
-        <p>Copyright © 2022 · Todos los derechos reservados · Vanina Murua</p>
-    </footer>
+                <!-- TABLA CORDURA ESTAMPADA-->
 
-</body>
+                    <tbody>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Porta mate</td>
+                            <td>$800</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Mate XXL</td>
+                            <td>$1000</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Yerbera</td>
+                            <td>$800</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Azucarera</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Trío</td>
+                            <td>$2000</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Trío XXL</td>
+                            <td>$2200</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Porta mate + yerbera</td>
+                            <td>$1400</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Mate XXL</td>
+                            <td>$1800</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Mate XXL + yerbera</td>
+                            <td>$1600</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td scope="row">Cordura estampada</td>
+                            <td>Yerbera + azucarera</td>
+                            <td>$1200</td>
+                    </tbody>
+                </table>
+            <br>
+            <!-- TABLA NECESER-->
+
+            
+                <table class="table table-hover m-auto">
+                    <thead>
+                        <tr class="table-primary">
+                            <th colspan="4" class="text-center">Neceser</th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="table-info">
+                            <th colspan="4" class="text-center">
+                                <img class="imgProductos box" src="../assets/images/neceser.jpg" alt="">
+                            </th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="table-danger">
+                            <th scope="col">Tela</th>
+                            <th scope="col">Medidas</th>
+                            <th scope="col">Tamaño</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-warning">
+                            <td scope="row">Sasha</td>
+                            <td></td>
+                            <td>Grande</td>
+                            <td>$</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Sasha</td>
+                            <td></td>
+                            <td>Mediano</td>
+                            <td>$</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Sasha</td>
+                            <td></td>
+                            <td>Chico</td>
+                            <td>$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <br>
+
+        <!-- TABLA BOLSO-->
+
+                <table class="table table-hover m-auto">
+                    <thead>
+                        <tr class="table-primary">
+                            <th colspan="4" class="text-center">Bolso</th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="table-info">
+                            <th colspan="4" class="text-center">
+                                <img class="imgProductos" src="../assets/images/bolso.jpg" alt="">
+                            </th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="table-danger">
+                            <th scope="col">Tela</th>
+                            <th scope="col">Medidas</th>
+                            <th scope="col">Tamaño</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>45 (ancho) x 40 (alto)</td>
+                            <td>Grande</td>
+                            <td>$3500</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td scope="row">Matelasse</td>
+                            <td>35 (ancho) x 30 (alto)</td>
+                            <td>Chico</td>
+                            <td>$3000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <br>
+
+        </main>
+        <footer>
+            <div>
+                <a href="https://www.instagram.com/lunaaccesoriosrosario/?hl=es-la" target="_blank"><img class="icons-wrapper icon ri-instagram-line" src="../assets/images/instagram.png" alt="Logo de instagram" width="30px" height="30px"></a>
+
+            <a href="https://wa.me/54341635965?text= Hola,%20quiero%20saber%20más%20sobre%20tus%20productos." target="_blank"><img class="icons-wrapper icon ri-whatsapp-line" src="../assets/images/whatsapp.png" alt="Logo de whatsapp" width="30px" height="30px"></a>
+            </div>
+            
+            <p>Copyright © 2022 · Todos los derechos reservados · Vanina Murua</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
