@@ -1,0 +1,5 @@
+@mixin aling-font-style($alineacion, $tipografia, $font-style){
+    text-align: $alineacion;
+    font-family: $tipografia;
+    font-style: $font-style;
+}

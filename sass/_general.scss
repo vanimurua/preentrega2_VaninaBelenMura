@@ -1,0 +1,56 @@
+.titulo {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: map-get($fuentes, titulo);
+    font-size: $diez-px * 4;
+    color: rgba(0, 0, 255, 0.623);
+    padding: $diez-px - 2;
+    margin-top: $diez-px * 4;
+    margin-bottom: $diez-px + 6;
+    @include aling-font-style(center, map-get($fuentes, titulo), normal);
+}
+
+.subtitulo {
+    font-family: map-get($fuentes, subtitulo);
+    text-align: $centrado;
+    font-size: $veinte-px;
+    font-weight: bold;
+    margin: $veinte-px;
+    color: map-get($color, azul);
+}
+
+h2 {
+    font-size: $veinte-px + 5;
+    margin: $treinta-px;
+    font-weight: bold;
+    @include aling-font-style(center, map-get($fuentes, h2), italic);
+}
+
+.centrado {
+    text-align: $centrado;
+}
+
+p {
+    font-size: larger;
+    @include aling-font-style(center, map-get($fuentes, parrafo), italic);
+}
+
+.margin15 {
+    margin-top: $diez-px + 5;
+    margin-bottom: $diez-px + 5;
+}
+
+.divMargin25px {
+    margin-bottom: $veinte-px + 5;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

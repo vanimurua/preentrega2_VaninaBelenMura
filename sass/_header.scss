@@ -1,0 +1,39 @@
+.cabecera {
+    background-image: url(../assets/images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo {
+    width: $diez-px * 8;
+    height: $diez-px * 8;
+    margin-left: $diez-px;
+}
+nav ul li a:hover {
+    color: blue;
+    text-decoration: none;
+}
+.menu {
+    font-family: map-get($fuentes, menu);
+    display: $inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color:#000000;
+    position: $position-relative;
+    margin-top: $diez-px;
+}
+.menu::after {
+    content:'';
+    width: $cien-porcent;
+    height: 2px;
+    background-color: #15fdb7;
+    border-radius:4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+.menu:hover::after {
+    transform:scaleX(1);
+}

@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Luna accesorios</title>
+        <link rel="icon" href="../assets/images/favicon.png" type="png" sizes="32px">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@600&family=Roboto:ital,wght@0,100;1,400;1,500&display=swap" rel="stylesheet">
@@ -49,17 +50,17 @@
 
         <form class="formulario">
           <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control fondoForm">
+            <label for="nombre" class="form-label">Nombre completo *</label>
+            <input type="text" class="form-control fondoForm" required>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control fondoForm">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" class="form-control fondoForm" required>
           </div>
 
           <div class="mb-3">
-            <label for="disabledSelect" class="form-label">Seleccione el medio de pago</label>
-            <select id="disabledSelect" class="form-select fondoForm">
+            <label for="disabledSelect" class="form-label">Seleccione el medio de pago *</label>
+            <select id="disabledSelect" class="form-select fondoForm" required>
               <option>Debito</option>
               <option>Credito</option>
             </select>
@@ -86,7 +87,7 @@
         <a href="https://wa.me/54341635965?text= Hola,%20quiero%20saber%20más%20sobre%20tus%20productos." target="_blank"><img class="icons-wrapper icon ri-whatsapp-line" src="../assets/images/whatsapp.png" alt="Logo de whatsapp" width="30px" height="30px"></a>
       </div>
 
-        <p>Copyright © 2022 · Todos los derechos reservados · Vanina Murua</p> 
+        <p class="parrafoFooter">Copyright © 2022 · Todos los derechos reservados · Vanina Murua</p> 
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

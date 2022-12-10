@@ -1,0 +1,40 @@
+/*VARIABLES*/
+
+$font-size: 40px;
+$font-italic: italic;
+
+$diez-px: 10px;
+$veinte-px: 20px;
+$treinta-px: 30px;
+$cien-px: 100px;
+
+$diez-porcent: 10%;
+$veinte-porcent: 20%;
+$treinta-porcent: 30%;
+$cien-porcent: 100%;
+
+$fuente-normal: 1rem;
+$fuente-mediana: 1.3em;
+$fuente-grande: 1.6em;
+
+$centrado: center;
+
+$position-relative: relative;
+$inline-block: inline-block;
+
+/*MAP*/
+
+$fuentes: (
+    titulo: "Dancing Script",
+    subtitulo: "'Gill Sans' 'Gill Sans MT' Calibri 'Trebuchet MS' sans-serif",
+    parrafo: "'Roboto' sans-serif",
+    menu: "Courgette",
+    h2: "Verdana Geneva Tahoma sans-serif",
+
+);
+
+$color: (
+    negro: black,
+    azul: midnightblue,
+)
+

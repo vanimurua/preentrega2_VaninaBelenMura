@@ -1,0 +1,46 @@
+footer {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    text-align: $centrado;
+    position: absolute;
+    bottom: 0;
+    height: $diez-px * 8;
+    width: $cien-porcent;
+    padding-top: $diez-px;
+    padding-bottom: $diez-px;
+    .icons-wrapper{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin-top:$diez-px - 5;
+    margin-left: $diez-px - 5;
+    }
+    .icons-wrapper::after{
+        content: '';
+        position: absolute;
+        width: $cien-porcent;
+        height: $diez-px - 5;
+        background-color: rgb(37, 37, 37);
+        border-radius: $diez-px;
+        left: $diez-porcent * 5;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+    .icon{
+        display: $inline-block;
+        animation: float infinite 4s ease-in ; 
+
+    }
+    .ri-instagram-line{
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .ri-whatsapp-line{
+        animation-delay: 0.6s;
+    }
+    .parrafoFooter {
+    font-family: map-get($fuentes, parrafo);
+    font-style: $font-italic;
+    font-size: medium;
+    }
+}
