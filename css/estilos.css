@@ -57,6 +57,9 @@ p {
   100% {
     transform: translateY(0); } }
 
+.justifyContentEnd {
+  justify-content: end; }
+
 footer {
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   text-align: center;
@@ -138,15 +141,6 @@ nav ul li a:hover {
 
 .menu:hover::after {
   transform: scaleX(1); }
-
-.botonMenu {
-  color: lightsalmon; }
-
-.navbar .container-fluid {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between; }
 
 body {
   background-image: linear-gradient(to right top, #92fe9d 0%, #00c9ff 100%);
