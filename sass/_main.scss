@@ -24,6 +24,12 @@
     text-align: $centrado;
 }
 
+@media (max-width: 768px) { 
+    .divImgIndex {
+        width: 80%;
+    }
+}
+
 
 /*MAIN PRODUCTOS*/
 

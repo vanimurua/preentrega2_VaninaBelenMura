@@ -57,8 +57,8 @@ p {
   100% {
     transform: translateY(0); } }
 
-.justifyContentEnd {
-  justify-content: end; }
+.cover {
+  object-fit: cover; }
 
 footer {
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
@@ -168,6 +168,10 @@ body {
   /*aca hice una operacion*/
   margin-right: 300px;
   text-align: center; }
+
+@media (max-width: 768px) {
+  .divImgIndex {
+    width: 80%; } }
 
 /*MAIN PRODUCTOS*/
 .imgProductos {
