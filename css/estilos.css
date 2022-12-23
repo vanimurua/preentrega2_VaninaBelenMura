@@ -182,6 +182,10 @@ body {
   margin-bottom: 20px;
   transition: transform 2s; }
 
+@media (max-width: 768px) {
+  .imgProductos {
+    height: auto; } }
+
 .imgProductos:hover {
   transform: scale(1.2, 1.2); }
 
