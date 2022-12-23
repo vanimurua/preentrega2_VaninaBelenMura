@@ -3,7 +3,7 @@ footer {
     text-align: $centrado;
     position: absolute;
     bottom: 0;
-    height: $diez-px * 8;
+    height: $diez-px * 9;
     width: $cien-porcent;
     padding-top: $diez-px;
     padding-bottom: $diez-px;
@@ -42,5 +42,11 @@ footer {
     font-family: map-get($fuentes, parrafo);
     font-style: $font-italic;
     font-size: medium;
+    }
+}
+
+@media (max-width: 768px) { 
+    footer {
+        height: $cien-px;
     }
 }

@@ -68,21 +68,37 @@
 /*MAIN UBICACION*/
 
 .table{
-    width: $diez-porcent * 7;
+    width: $diez-porcent*6;
+    height: auto;
     margin: 0 auto;
     margin-top: $treinta-px;
     .tbodyMapa {
         tr{
             .mapa {
-                height: $cien-porcent * 4;
-                width: $cien-porcent * 4;
-                margin-top: $veinte-px;
-                margin-bottom: $veinte-px;
+                width: 70%;
+                height: 500px;
+                display: block;
+                margin: 0 auto;
             }
         }
     }
 }
 
+ 
+@media (max-width: 768px) { 
+    .table{
+        width: $diez-porcent*9;
+        .tbodyMapa {
+            tr{
+                .mapa {
+                    width: 80%;
+                    height: 400px;
+
+                }
+            }
+        }
+    }
+}
 
 /*MAIN CONTACTO*/
 
@@ -103,4 +119,18 @@
             border: 2px solid #ffffff;
         }
     }
+}
+
+/*MAIN ERROR 404*/
+
+.imgError {
+    text-align: center;
+}
+
+.parrafoError {
+    font-size: 4rem;
+}
+
+.btnError {
+    margin-bottom: $treinta-px;
 }

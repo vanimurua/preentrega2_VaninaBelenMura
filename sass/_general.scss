@@ -5,7 +5,7 @@
     color: rgba(0, 0, 255, 0.623);
     padding: $diez-px - 2;
     margin-top: $diez-px * 4;
-    margin-bottom: $diez-px + 6;
+    margin-bottom: $diez-px * 4;
     @include aling-font-style(center, map-get($fuentes, titulo), normal);
 }
 
@@ -14,7 +14,7 @@
     text-align: $centrado;
     font-size: $veinte-px;
     font-weight: bold;
-    margin: $veinte-px;
+    margin-bottom: $veinte-px;
     color: map-get($color, azul);
 }
 
